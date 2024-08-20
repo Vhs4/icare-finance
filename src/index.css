@@ -9,4 +9,6 @@
 
 body {
     list-style-type: none;
+    font-family: ifood_textosmedium;
+    overflow: hidden;
 }

@@ -1,0 +1,104 @@
+
+.main-sidebar {
+    background: var(--bs-body-bg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 1px solid var(--bs-border-color);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    max-width: 300px;
+}
+.main-sidebar .brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+    padding: 2rem 4.25rem 0;
+    width: 90%;
+    box-sizing: border-box;
+    }
+    .brand-text{
+    text-align: center;
+    height: 1px;
+    }
+}
+.main-sidebar .body{
+    width: 100%;
+    overflow: auto;
+    min-width: 300px;
+}
+
+.main-sidebar ul.navbar-nav {
+    
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-color: var(--bs-body-color);
+    --bs-nav-link-hover-color: var(--bs-body-color);
+    --bs-nav-link-disabled-color:var(--bs-tertiary-color);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.main-sidebar .menu-title{
+    display: block;
+    color: var(--bs-tertiary-color);
+    text-transform: uppercase;
+    padding: .375rem 1.5rem .375rem 2rem;
+    font-size: .75rem;
+}
+.main-sidebar .nav-item {
+    margin-bottom: .5rem;
+}
+.main-sidebar .nav-item a.nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    border-radius:.25rem;
+    border: none;
+    text-decoration: none;
+    color: var(--bs-secondary-color);
+    padding: .375rem 1.5rem .375rem 2rem;
+    &:before{
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background-color: var(--bs-primary);
+        width: .25rem;
+        height: 0%;
+        border-radius:0 .24rem .24rem 0;
+        opacity: 0;
+        transition: .3s linear;
+    }
+    .bi{
+        --icon-bg: var(--bs-secondary-bg)
+    }
+    &:hover, &.active{
+        &:before{
+            top:0;
+            height: 100%;
+            opacity: 1;
+        }
+        
+    }
+    &.active{
+    
+    color: var(--bs-primary);
+        .bi{
+            --icon-bg: var(--bs-primary-bg-subtle);
+            color: var(--bs-primary-text-emphasis);
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    .main-sidebar {
+        display: flex;
+    }
+}

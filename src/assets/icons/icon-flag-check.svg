@@ -1,0 +1,5 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="var(--icon-bg, transparent)" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-flag-check">
+<path id="Vector" d="M13.767 15.1201C13.1054 14.876 12.5031 14.4942 12 14.0001C11.0654 13.084 9.80876 12.5708 8.5 12.5708C7.19124 12.5708 5.93464 13.084 5 14.0001M5 14.0001V5.00009C5.93464 4.08395 7.19124 3.5708 8.5 3.5708C9.80876 3.5708 11.0654 4.08395 12 5.00009C12.9346 5.91622 14.1912 6.42937 15.5 6.42937C16.8088 6.42937 18.0654 5.91622 19 5.00009V13.5001M5 14.0001V21M15 19L17 21L21 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
