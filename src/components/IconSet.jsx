@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const IconSet = ({ imageUrl, styleClass }) => {
   const [svgCode, setSvgCode] = useState('');
@@ -22,6 +23,11 @@ const IconSet = ({ imageUrl, styleClass }) => {
         dangerouslySetInnerHTML={{ __html: svgCode }}
       />
   );
+};
+
+IconSet.propTypes = {
+  imageUrl: PropTypes.string,
+  styleClass: PropTypes.string,
 };
 
 export default IconSet;
