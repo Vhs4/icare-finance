@@ -1,0 +1,26 @@
+
+.main-structure {
+  background-color:  var(--bs-body-bg) ;
+  display: flex;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+.structure>*{
+  overflow: hidden;
+}
+.structure .main-sidebar {
+  z-index: 1000;
+  width: 300px;
+  padding: 0.25rem;
+  color: white;
+  max-width: 300px;
+}
+.main-content{
+  padding: 0.25rem 0.25rem 0.25rem 0; 
+  flex: 1 1 auto;
+  overflow: auto;
+  background: url(..../public/images/bg-shade.png) no-repeat;
+    background-size: 100%;
+    background-position: -570px -380px;
+}
