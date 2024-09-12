@@ -3,4 +3,6 @@
 @import "./assets/styles/bootstrap-custom.css";
 @import "./assets/styles/main-struture.css";
 
-
+.text-custom-danger {
+  color: var(--bs-primary);
+}
