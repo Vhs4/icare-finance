@@ -2,10 +2,12 @@ class IconSet extends HTMLElement {
     constructor() {
         super();
         this.imageUrl = this.getAttribute('imageUrl');
+        this.imageClass = this.classList;
     }
 
     connectedCallback() {
         this.fetchAndReplaceIcon();
+        
     }
 
     fetchAndReplaceIcon() {
@@ -13,10 +15,15 @@ class IconSet extends HTMLElement {
             fetch(this.imageUrl)
                 .then(response => response.text())
                 .then(svgContent => {
-                    const tempContainer = document.createElement('div');
+                    const tempContainer = document.createElement('svg');
+                    
                     tempContainer.innerHTML = svgContent;
 
                     const svgElement = tempContainer.querySelector('svg');
+
+                    if(this.classList.length>0){
+                         svgElement.classList.add(this.imageClass);
+                    }
                     
                     this.parentNode.replaceChild(svgElement, this);
                 })

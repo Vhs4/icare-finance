@@ -20,7 +20,7 @@
   padding: 0.25rem 0.25rem 0.25rem 0; 
   flex: 1 1 auto;
   overflow: auto;
-  background: url(..../public/images/bg-shade.png) no-repeat;
+  background: url(../../public/images/bg-shade.png) no-repeat;
     background-size: 100%;
     background-position: -570px -380px;
 }

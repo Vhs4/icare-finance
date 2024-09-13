@@ -98,7 +98,7 @@
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.07);
   --bs-border-radius: 0.375rem;
   --bs-border-radius-sm: 0.25rem;
   --bs-border-radius-lg: 0.5rem;
@@ -186,4 +186,33 @@
   --bs-nav-underline-gap: 1rem;
   --bs-nav-underline-border-width: 0.125rem;
   --bs-nav-underline-link-active-color: var(--bs-primary);
+}
+
+
+.card {
+  --bs-card-spacer-y: .5rem;
+  --bs-card-spacer-x: 0;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-title-color: ;
+  --bs-card-subtitle-color: ;
+  --bs-card-border-width: var(--bs-border-width);
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-radius: var(--bs-border-radius-xl);
+  --bs-card-box-shadow: ;
+  --bs-card-inner-border-radius: calc(var(--bs-border-radius-xl) -(var(--bs-border-width)));
+  --bs-card-cap-padding-y: 0;
+  --bs-card-cap-padding-x: 0;
+  --bs-card-cap-bg: transparent;
+  --bs-card-cap-color: ;
+  --bs-card-height: ;
+  --bs-card-color: ;
+  --bs-card-bg: var(--bs-body-bg);
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  
+  padding: 1rem;
+
+  .card-header, .card-footer{
+    border: 0;
+  }
 }
