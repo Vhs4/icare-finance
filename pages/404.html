@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário Responsivo</title>
+    <!-- Incluindo o Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Este link não existe</h1>
+    <div class="container mt-5">
+        <form>
+            <div class="row g-3">
+                <!-- Campo Período -->
+                <div class="col-md-12">
+                    <label for="periodo" class="form-label text-danger">Período</label>
+                    <input type="text" class="form-control rounded" id="periodo" name="periodo" placeholder="12/05/2024 - 12/06/2024" readonly>
+                </div>
+
+                <!-- Campo Tipo de Pagamento -->
+                <div class="col-md-12">
+                    <label for="tipos_pagamento" class="form-label text-danger">Tipo de pagamento</label>
+                    <select id="tipos_pagamento" class="form-select rounded">
+                        <option value="todos">Todos</option>
+                        <option value="pix">Pix</option>
+                        <option value="debito">Débito</option>
+                        <option value="credito">Crédito</option>
+                        <option value="dinheiro">Dinheiro</option>
+                    </select>
+                </div>
+
+                <!-- Campo Valor -->
+                <div class="col-md-12">
+                    <label for="valor" class="form-label text-danger">Valor</label>
+                    <select id="valor" class="form-select rounded">
+                        <option value="nenhum">Nenhum</option>
+                        <option value="menor_100">Menor que 100</option>
+                        <option value="entre_100_500">Entre 100 e 500</option>
+                        <option value="maior_500">Maior que 500</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary rounded">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Incluindo o Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
 </html>

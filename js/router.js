@@ -12,7 +12,7 @@ const routes = {
     "/mensagens": "./pages/messages.html",
     "/notificacoes": "./pages/notification.html",
     "/analises": "./pages/analises.html",
-    "/gerencia": "./pages/pagamentos.html"
+    "/gestao": "./pages/gestao.html"
 };
 
 const handleLocation = async () => {
