@@ -1,12 +1,280 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../css/seguranca.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles.css">
 </head>
+
+<style>
+  .firstDivSecurity {
+    display: flex;
+    padding: var(--spacer-spacers-4, 24px) var(--spacer-spacers-5, 48px);
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+
+  .divPessoasSecurity {
+    display: flex;
+    padding: var(--spacer-spacers-3, 16px) var(--spacer-spacers-5, 48px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacer-spacers-3, 16px);
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+
+  .tabela {
+    width: 100%;
+    border-collapse: collapse;
+    ;
+  }
+
+  .tabela th,
+  .tabela td {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .tabela th {
+    color: var(--theme-body-body-color, var(--body-body-color, #212529));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .tdNome {
+    color: var(--theme-primary-primary, var(--primary-primary, #EA0033));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+</style>
+
 <body>
-  <h1>Segurança</h1>
+  <section style="display: flex; flex-direction: column;">
+    <div class="firstDivSecurity">
+      <div class="input-group mb-3" style="width: 300px; height: 38px; max-width: 100%; border-radius: 6px;">
+        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
+          aria-describedby="button-addon2">
+        <button class="btn" type="button" id="button-addon2" style="background-color: #EA0033;">
+          <i class="bi bi-search" style="color: white;"></i>
+        </button>
+      </div>
+      <button type="button" class="btn btn-primary"
+        style="display: flex; justify-content: center; align-items: center;">
+        <i class="bi" style="width: 16px; height: 16px; display: flex; align-items: center; margin-right: 4px;">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.6667 12.6676H14.6667M12.6667 10.6676V14.6676M4 14.001V12.6676C4 11.9604 4.28095 11.2821 4.78105 10.782C5.28115 10.2819 5.95942 10.001 6.66667 10.001H9.33333M5.33333 4.66764C5.33333 5.37489 5.61428 6.05316 6.11438 6.55326C6.61448 7.05336 7.29276 7.33431 8 7.33431C8.70724 7.33431 9.38552 7.05336 9.88562 6.55326C10.3857 6.05316 10.6667 5.37489 10.6667 4.66764C10.6667 3.9604 10.3857 3.28212 9.88562 2.78203C9.38552 2.28193 8.70724 2.00098 8 2.00098C7.29276 2.00098 6.61448 2.28193 6.11438 2.78203C5.61428 3.28212 5.33333 3.9604 5.33333 4.66764Z"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </i>
+        Novo usuário
+      </button>
+    </div>
+    <div class="divPessoasSecurity">
+      <table class="tabela">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Cargo</th>
+            <th scope="col">Permissão</th>
+            <th scope="col" style="display: flex; align-items: center; justify-content: center; text-align: center;">
+              Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tdNome">João Silva</td>
+            <td>joao.silva@email.com</td>
+            <td>Gerente</td>
+            <td>Administrador</td>
+            <td style="display: flex; align-items: center; justify-content: center;">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M11.7497 5.92131L15.083 9.25464M3.83301 17.1712H7.16634L15.9163 8.42115C16.1352 8.20228 16.3088 7.94244 16.4273 7.65648C16.5457 7.37051 16.6067 7.06401 16.6067 6.75448C16.6067 6.44496 16.5457 6.13846 16.4273 5.85249C16.3088 5.56652 16.1352 5.30669 15.9163 5.08782C15.6975 4.86895 15.4376 4.69533 15.1517 4.57688C14.8657 4.45843 14.5592 4.39746 14.2497 4.39746C13.9401 4.39746 13.6336 4.45843 13.3477 4.57688C13.0617 4.69533 12.8019 4.86895 12.583 5.08782L3.83301 13.8378V17.1712Z"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M3.83301 6.33822H17.1663M8.83301 9.67155V14.6715M12.1663 9.67155V14.6715M4.66634 6.33822L5.49967 16.3382C5.49967 16.7802 5.67527 17.2042 5.98783 17.5167C6.30039 17.8293 6.72431 18.0049 7.16634 18.0049H13.833C14.275 18.0049 14.699 17.8293 15.0115 17.5167C15.3241 17.2042 15.4997 16.7802 15.4997 16.3382L16.333 6.33822M7.99967 6.33822V3.83822C7.99967 3.6172 8.08747 3.40524 8.24375 3.24896C8.40003 3.09268 8.61199 3.00488 8.83301 3.00488H12.1663C12.3874 3.00488 12.5993 3.09268 12.7556 3.24896C12.9119 3.40524 12.9997 3.6172 12.9997 3.83822V6.33822"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdNome">João Silva</td>
+            <td>joao.silva@email.com</td>
+            <td>Gerente</td>
+            <td>Administrador</td>
+            <td style="display: flex; align-items: center; justify-content: center;">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M11.7497 5.92131L15.083 9.25464M3.83301 17.1712H7.16634L15.9163 8.42115C16.1352 8.20228 16.3088 7.94244 16.4273 7.65648C16.5457 7.37051 16.6067 7.06401 16.6067 6.75448C16.6067 6.44496 16.5457 6.13846 16.4273 5.85249C16.3088 5.56652 16.1352 5.30669 15.9163 5.08782C15.6975 4.86895 15.4376 4.69533 15.1517 4.57688C14.8657 4.45843 14.5592 4.39746 14.2497 4.39746C13.9401 4.39746 13.6336 4.45843 13.3477 4.57688C13.0617 4.69533 12.8019 4.86895 12.583 5.08782L3.83301 13.8378V17.1712Z"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M3.83301 6.33822H17.1663M8.83301 9.67155V14.6715M12.1663 9.67155V14.6715M4.66634 6.33822L5.49967 16.3382C5.49967 16.7802 5.67527 17.2042 5.98783 17.5167C6.30039 17.8293 6.72431 18.0049 7.16634 18.0049H13.833C14.275 18.0049 14.699 17.8293 15.0115 17.5167C15.3241 17.2042 15.4997 16.7802 15.4997 16.3382L16.333 6.33822M7.99967 6.33822V3.83822C7.99967 3.6172 8.08747 3.40524 8.24375 3.24896C8.40003 3.09268 8.61199 3.00488 8.83301 3.00488H12.1663C12.3874 3.00488 12.5993 3.09268 12.7556 3.24896C12.9119 3.40524 12.9997 3.6172 12.9997 3.83822V6.33822"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdNome">João Silva</td>
+            <td>joao.silva@email.com</td>
+            <td>Gerente</td>
+            <td>Administrador</td>
+            <td style="display: flex; align-items: center; justify-content: center;">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M11.7497 5.92131L15.083 9.25464M3.83301 17.1712H7.16634L15.9163 8.42115C16.1352 8.20228 16.3088 7.94244 16.4273 7.65648C16.5457 7.37051 16.6067 7.06401 16.6067 6.75448C16.6067 6.44496 16.5457 6.13846 16.4273 5.85249C16.3088 5.56652 16.1352 5.30669 15.9163 5.08782C15.6975 4.86895 15.4376 4.69533 15.1517 4.57688C14.8657 4.45843 14.5592 4.39746 14.2497 4.39746C13.9401 4.39746 13.6336 4.45843 13.3477 4.57688C13.0617 4.69533 12.8019 4.86895 12.583 5.08782L3.83301 13.8378V17.1712Z"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M3.83301 6.33822H17.1663M8.83301 9.67155V14.6715M12.1663 9.67155V14.6715M4.66634 6.33822L5.49967 16.3382C5.49967 16.7802 5.67527 17.2042 5.98783 17.5167C6.30039 17.8293 6.72431 18.0049 7.16634 18.0049H13.833C14.275 18.0049 14.699 17.8293 15.0115 17.5167C15.3241 17.2042 15.4997 16.7802 15.4997 16.3382L16.333 6.33822M7.99967 6.33822V3.83822C7.99967 3.6172 8.08747 3.40524 8.24375 3.24896C8.40003 3.09268 8.61199 3.00488 8.83301 3.00488H12.1663C12.3874 3.00488 12.5993 3.09268 12.7556 3.24896C12.9119 3.40524 12.9997 3.6172 12.9997 3.83822V6.33822"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdNome">João Silva</td>
+            <td>joao.silva@email.com</td>
+            <td>Gerente</td>
+            <td>Administrador</td>
+            <td style="display: flex; align-items: center; justify-content: center;">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M11.7497 5.92131L15.083 9.25464M3.83301 17.1712H7.16634L15.9163 8.42115C16.1352 8.20228 16.3088 7.94244 16.4273 7.65648C16.5457 7.37051 16.6067 7.06401 16.6067 6.75448C16.6067 6.44496 16.5457 6.13846 16.4273 5.85249C16.3088 5.56652 16.1352 5.30669 15.9163 5.08782C15.6975 4.86895 15.4376 4.69533 15.1517 4.57688C14.8657 4.45843 14.5592 4.39746 14.2497 4.39746C13.9401 4.39746 13.6336 4.45843 13.3477 4.57688C13.0617 4.69533 12.8019 4.86895 12.583 5.08782L3.83301 13.8378V17.1712Z"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M3.83301 6.33822H17.1663M8.83301 9.67155V14.6715M12.1663 9.67155V14.6715M4.66634 6.33822L5.49967 16.3382C5.49967 16.7802 5.67527 17.2042 5.98783 17.5167C6.30039 17.8293 6.72431 18.0049 7.16634 18.0049H13.833C14.275 18.0049 14.699 17.8293 15.0115 17.5167C15.3241 17.2042 15.4997 16.7802 15.4997 16.3382L16.333 6.33822M7.99967 6.33822V3.83822C7.99967 3.6172 8.08747 3.40524 8.24375 3.24896C8.40003 3.09268 8.61199 3.00488 8.83301 3.00488H12.1663C12.3874 3.00488 12.5993 3.09268 12.7556 3.24896C12.9119 3.40524 12.9997 3.6172 12.9997 3.83822V6.33822"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdNome">Maria Souza</td>
+            <td>maria.souza@email.com</td>
+            <td>Funcionária</td>
+            <td>Funcionário</td>
+            <td style="display: flex; align-items: center; justify-content: center;">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M11.7497 5.92131L15.083 9.25464M3.83301 17.1712H7.16634L15.9163 8.42115C16.1352 8.20228 16.3088 7.94244 16.4273 7.65648C16.5457 7.37051 16.6067 7.06401 16.6067 6.75448C16.6067 6.44496 16.5457 6.13846 16.4273 5.85249C16.3088 5.56652 16.1352 5.30669 15.9163 5.08782C15.6975 4.86895 15.4376 4.69533 15.1517 4.57688C14.8657 4.45843 14.5592 4.39746 14.2497 4.39746C13.9401 4.39746 13.6336 4.45843 13.3477 4.57688C13.0617 4.69533 12.8019 4.86895 12.583 5.08782L3.83301 13.8378V17.1712Z"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M3.83301 6.33822H17.1663M8.83301 9.67155V14.6715M12.1663 9.67155V14.6715M4.66634 6.33822L5.49967 16.3382C5.49967 16.7802 5.67527 17.2042 5.98783 17.5167C6.30039 17.8293 6.72431 18.0049 7.16634 18.0049H13.833C14.275 18.0049 14.699 17.8293 15.0115 17.5167C15.3241 17.2042 15.4997 16.7802 15.4997 16.3382L16.333 6.33822M7.99967 6.33822V3.83822C7.99967 3.6172 8.08747 3.40524 8.24375 3.24896C8.40003 3.09268 8.61199 3.00488 8.83301 3.00488H12.1663C12.3874 3.00488 12.5993 3.09268 12.7556 3.24896C12.9119 3.40524 12.9997 3.6172 12.9997 3.83822V6.33822"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdNome">Maria Souza</td>
+            <td>maria.souza@email.com</td>
+            <td>Funcionária</td>
+            <td>Funcionário</td>
+            <td style="display: flex; align-items: center; justify-content: center;">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M11.7497 5.92131L15.083 9.25464M3.83301 17.1712H7.16634L15.9163 8.42115C16.1352 8.20228 16.3088 7.94244 16.4273 7.65648C16.5457 7.37051 16.6067 7.06401 16.6067 6.75448C16.6067 6.44496 16.5457 6.13846 16.4273 5.85249C16.3088 5.56652 16.1352 5.30669 15.9163 5.08782C15.6975 4.86895 15.4376 4.69533 15.1517 4.57688C14.8657 4.45843 14.5592 4.39746 14.2497 4.39746C13.9401 4.39746 13.6336 4.45843 13.3477 4.57688C13.0617 4.69533 12.8019 4.86895 12.583 5.08782L3.83301 13.8378V17.1712Z"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M3.83301 6.33822H17.1663M8.83301 9.67155V14.6715M12.1663 9.67155V14.6715M4.66634 6.33822L5.49967 16.3382C5.49967 16.7802 5.67527 17.2042 5.98783 17.5167C6.30039 17.8293 6.72431 18.0049 7.16634 18.0049H13.833C14.275 18.0049 14.699 17.8293 15.0115 17.5167C15.3241 17.2042 15.4997 16.7802 15.4997 16.3382L16.333 6.33822M7.99967 6.33822V3.83822C7.99967 3.6172 8.08747 3.40524 8.24375 3.24896C8.40003 3.09268 8.61199 3.00488 8.83301 3.00488H12.1663C12.3874 3.00488 12.5993 3.09268 12.7556 3.24896C12.9119 3.40524 12.9997 3.6172 12.9997 3.83822V6.33822"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdNome">Maria Souza</td>
+            <td>maria.souza@email.com</td>
+            <td>Funcionária</td>
+            <td>Funcionário</td>
+            <td style="display: flex; align-items: center; justify-content: center;">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M11.7497 5.92131L15.083 9.25464M3.83301 17.1712H7.16634L15.9163 8.42115C16.1352 8.20228 16.3088 7.94244 16.4273 7.65648C16.5457 7.37051 16.6067 7.06401 16.6067 6.75448C16.6067 6.44496 16.5457 6.13846 16.4273 5.85249C16.3088 5.56652 16.1352 5.30669 15.9163 5.08782C15.6975 4.86895 15.4376 4.69533 15.1517 4.57688C14.8657 4.45843 14.5592 4.39746 14.2497 4.39746C13.9401 4.39746 13.6336 4.45843 13.3477 4.57688C13.0617 4.69533 12.8019 4.86895 12.583 5.08782L3.83301 13.8378V17.1712Z"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M3.83301 6.33822H17.1663M8.83301 9.67155V14.6715M12.1663 9.67155V14.6715M4.66634 6.33822L5.49967 16.3382C5.49967 16.7802 5.67527 17.2042 5.98783 17.5167C6.30039 17.8293 6.72431 18.0049 7.16634 18.0049H13.833C14.275 18.0049 14.699 17.8293 15.0115 17.5167C15.3241 17.2042 15.4997 16.7802 15.4997 16.3382L16.333 6.33822M7.99967 6.33822V3.83822C7.99967 3.6172 8.08747 3.40524 8.24375 3.24896C8.40003 3.09268 8.61199 3.00488 8.83301 3.00488H12.1663C12.3874 3.00488 12.5993 3.09268 12.7556 3.24896C12.9119 3.40524 12.9997 3.6172 12.9997 3.83822V6.33822"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdNome">Maria Souza</td>
+            <td>maria.souza@email.com</td>
+            <td>Funcionária</td>
+            <td>Funcionário</td>
+            <td style="display: flex; align-items: center; justify-content: center;">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M11.7497 5.92131L15.083 9.25464M3.83301 17.1712H7.16634L15.9163 8.42115C16.1352 8.20228 16.3088 7.94244 16.4273 7.65648C16.5457 7.37051 16.6067 7.06401 16.6067 6.75448C16.6067 6.44496 16.5457 6.13846 16.4273 5.85249C16.3088 5.56652 16.1352 5.30669 15.9163 5.08782C15.6975 4.86895 15.4376 4.69533 15.1517 4.57688C14.8657 4.45843 14.5592 4.39746 14.2497 4.39746C13.9401 4.39746 13.6336 4.45843 13.3477 4.57688C13.0617 4.69533 12.8019 4.86895 12.583 5.08782L3.83301 13.8378V17.1712Z"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M3.83301 6.33822H17.1663M8.83301 9.67155V14.6715M12.1663 9.67155V14.6715M4.66634 6.33822L5.49967 16.3382C5.49967 16.7802 5.67527 17.2042 5.98783 17.5167C6.30039 17.8293 6.72431 18.0049 7.16634 18.0049H13.833C14.275 18.0049 14.699 17.8293 15.0115 17.5167C15.3241 17.2042 15.4997 16.7802 15.4997 16.3382L16.333 6.33822M7.99967 6.33822V3.83822C7.99967 3.6172 8.08747 3.40524 8.24375 3.24896C8.40003 3.09268 8.61199 3.00488 8.83301 3.00488H12.1663C12.3874 3.00488 12.5993 3.09268 12.7556 3.24896C12.9119 3.40524 12.9997 3.6172 12.9997 3.83822V6.33822"
+                    stroke="#EA0033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+
 </body>
+
 </html>
