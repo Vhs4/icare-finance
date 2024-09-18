@@ -8,13 +8,14 @@ body {
 .login-container {
     display: flex;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     justify-content: flex-end;
     align-items: center;
 }
 
 .form-signin {
-    width: 1172px;
+    width: 100%;
+    max-width: 1172px;
     min-height: 100vh;
     padding: 15px;
     background:  #EA0033;
@@ -23,8 +24,7 @@ body {
 }
 
 .image-login {
-    width: 680.7px;
-    height: 681.98px;
+    height: auto;
     position: relative;
     left: 300px;
     top: 70px;
@@ -35,6 +35,7 @@ body {
 }
 
 .button-login {
+    width: 100%;
     background-color: #840019;
     display: flex;
     justify-content: space-around;
@@ -42,27 +43,34 @@ body {
 }
 
 #ifood-logo {
-    width: 158.85px;
+    width: 100%;
+    max-width: 160px;
     height: auto;
 }
 
 #ifood-login-image{
+    width: 75%;
+    height: auto;
     position: relative;
     
 }
 #ifood-arrow {
+    width: 60%;
+    height: auto;
     left: 130px;
-    bottom: 120px;
+    bottom: 90px;
     position: relative;
 }
 
 .form-input {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     height: 58px;
 }
 
 .send-text-container {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
 }
 
 .login-link{
@@ -97,4 +105,14 @@ body {
 
 #ifood-loading-logo {
     padding-bottom: 43px;
+}
+
+#login-link-senha, #login-link-criar-conta {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .image-login #ifood-login-image, #ifood-arrow {
+        display: none; 
+    }
 }
