@@ -23,4 +23,8 @@
   background: url(../../public/images/bg-shade.png) no-repeat;
     background-size: 100%;
     background-position: -570px -380px;
+
+}
+.main-content > .container-fluid:nth-child(2){
+  height: calc(100vh - 88px);
 }

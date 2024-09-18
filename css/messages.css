@@ -1,0 +1,24 @@
+.message-structure{
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    margin: 0 calc(var(--bs-gutter-x)*-.5);
+}
+
+.card.card-message{
+    position: relative;
+    width: 80%;
+}
+.card.card-message.right{
+    margin-left: 20%;
+}
+.card.card-message.right:before{
+    content: ;
+}
+.card.card-message.left{
+    margin-right: 20%;
+}
+
+.message-footer{
+    display: flex;
+    align-items: center;
+}

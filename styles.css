@@ -1,4 +1,6 @@
 @import "./assets/fonts/ifood-fonts.css";
 @import "./assets/styles/main-sidebar.css";
 @import "./assets/styles/bootstrap-custom.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import "./assets/styles/main-struture.css";
+@import "./css/messages.css";
