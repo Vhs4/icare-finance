@@ -1,177 +1,206 @@
-<div class="message-structure h-100">
-  <!--Sidebar Start-->
-  <aside class="message-list" role="tablist" aria-orientation="vertical">
-    <div id="collapseAside" class="nav nav-message border-end flex-column ">
-      <a class="nav-link active" onclick="collapse()" href="#" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-        type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-        <div class="rounded-pills p-i me-3">
-          <img srcset="./public/images/image-placeholder.png" width="40px" class="object-fit-cover border rounded-pill"
-            alt="..." />
-        </div>
-        <div class="flex-fill pe-2 overflow-hidden">
-          <h6 class="name pe-2">
-            Victor Hugo
-          </h6>
-          <small class="text-body-tertiary">1 min</small>
-
-        </div>
-        <div style="white-space:nowrap">
-          <div class="badge bg-primary">02</div>
-          <i class="bi bi-chevron-right"></i>
-        </div>
-      </a>
-      <a class="nav-link" onclick="collapse()" href="#" id="nav-home-tab2" data-bs-toggle="tab" data-bs-target="#nav-home2" type="button"
-        role="tab" aria-controls="nav-home" aria-selected="true">
-        <div class="rounded-pills p-i me-3">
-          <img srcset="./public/images/image-placeholder.png" width="40px" class="object-fit-cover border rounded-pill"
-            alt="..." />
-        </div>
-        <div class="flex-fill pe-2">
-          <h6 class="name">
-            Carol Carolina
-          </h6>
-          <small class="text-body-tertiary">1 min</small>
-        </div>
-        <div>
-          <i class="bi bi-chevron-right"></i>
-        </div>
-      </a>
-    </div>
-  </aside>
-  <!--Sidebar End-->
-  <!--Content Start-->
-  <div class="tab-content tab-content-message">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-      <header class="message-header border-bottom">
-        <div class="d-flex align-items-center px-3 py-3">
-          <button class="btn btn-collapse btn-primary d-block d-md-none me-3 px-2" onclick="toogleCollapse()">
-            <icon-set imageUrl="./public/icons/icon-brand-messenger.svg"></icon-set>
-            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-              <span class="visually-hidden">New alerts</span>
-            </span>
-          </button>
-          <div class="rounded-pills p-i me-3">
-            <img srcset="./public/images/image-placeholder.png" width="40px"
-              class="object-fit-cover border rounded-pill" alt="..." />
-          </div>
-          <div class="flex-fill pe-2">
-            <h6>
-              Victor Hugo<br />
-              <small class="text-body-tertiary">1 min</small>
-            </h6>
-          </div>
-          <button class="btn btn-outline-danger border-0 px-2">
-            <icon-set imageUrl="./public/icons/icon-dots.svg"></icon-set>
-          </button>
-        </div>
-      </header>
-      <div class="message-body">
-        <div class="message left p-2">
-          <div class="card card-message shadow">
-            <div class="card-header text-primary">Victor Hugo</div>
-            <div class="card-body">Minha mensagem</div>
-            <div class="card-footer">
-              <small class="text-body-tertiary">2 dias</small>
-            </div>
-          </div>
-        </div>
-        <div class="message left p-2">
-          <div class="card card-message shadow">
-            <div class="card-header text-primary">Victor Hugo</div>
-            <div class="card-body">Minha mensagem</div>
-            <div class="card-footer">
-              <small class="text-body-tertiary">2 dias</small>
-            </div>
-          </div>
-        </div>
-        <div class="message right p-2">
-          <div class="card card-message right shadow">
-            <div class="card-header text-primary">Guilherme Brenne Bello</div>
-            <div class="card-body">Minha mensagem</div>
-            <div class="card-footer">
-              <small class="text-body-tertiary">1 dias</small>
-            </div>
-          </div>
-        </div>
-        <div class="message-divider text-body-tertiary"><span></span><small>Novas Mensagens</small></div>
-        <div class="message left p-2">
-          <div class="card card-message shadow">
-            <div class="card-header text-primary">Victor Hugo</div>
-            <div class="card-body">Minha mensagem</div>
-            <div class="card-footer">
-              <small class="text-body-tertiary">2 min</small>
-            </div>
-          </div>
-        </div>
-        <div class="message right p-2">
-          <div class="card card-message right shadow">
-            <div class="card-header text-primary">Guilherme Brenne Bello</div>
-            <div class="card-body">Minha mensagem</div>
-            <div class="card-footer">
-              <small class="text-body-tertiary">1 min</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="message-footer shadow-lg border-top p-2">
-        <textarea class="form-control rounded-4" placeholder="Escreva sua mensagem aqui..."></textarea>
-        <button class="btn btn-primary mx-2 px-2 rounded-pill">
-          <icon-set imageUrl="../public/icons/icon-send.svg"></icon-set>
-        </button>
-      </footer>
-    </div>
-    <div class="tab-pane fade" id="nav-home2" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-      <header class="border-bottom">
-        <div class="d-flex align-items-center px-3 py-3">
-          <button class="btn btn-collapse btn-primary d-block d-md-none me-3 px-2" onclick="toogleCollapse()">
-            <icon-set imageUrl="./public/icons/icon-brand-messenger.svg"></icon-set>
-            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-              <span class="visually-hidden">New alerts</span>
-            </span>
-          </button>
-          <div class="rounded-pills p-i me-3">
-            <img srcset="./public/images/image-placeholder.png" width="40px"
-              class="object-fit-cover border rounded-pill" alt="..." />
-          </div>
-          <div class="flex-fill pe-2">
-            <h6>
-              Carol Carolina<br />
-              <small class="text-body-tertiary">1 min</small>
-            </h6>
-          </div>
-          <button class="btn btn-outline-danger border-0 px-2">
-            <icon-set imageUrl="./public/icons/icon-dots.svg"></icon-set>
-          </button>
-        </div>
-      </header>
-      <div class="message-body">
-        <div class="message left p-2">
-          <div class="card card-message shadow ">
-            <div class="card-header text-primary">Carol Carolina</div>
-            <div class="card-body">Minha mensagem</div>
-            <div class="card-footer">
-              <small class="text-body-tertiary">2 min</small>
-            </div>
-          </div>
-        </div>
-        <div class="message right p-2">
-          <div class="card card-message shadow ">
-            <div class="card-header text-primary">Guilherme Bello</div>
-            <div class="card-body">Minha mensagem</div>
-            <div class="card-footer">
-              <small class="text-body-tertiary">1 min</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="message-footer shadow-lg border-top p-2">
-        <textarea class="form-control rounded-4" placeholder="Escreva sua mensagem aqui..."></textarea>
-        <button class="btn btn-primary mx-2 px-2 rounded-pill">
-          <icon-set imageUrl="../public/icons/icon-send.svg"></icon-set>
-        </button>
-      </footer>
-    </div>
+<header class='container-fluid d-flex align-items-center border-bottom py-2 '>
+  <div class='navbar-toggler pe-3'>
+      <button class="btn btn-primary rounded-pill" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <icon-set imageUrl="./public/icons/icon-menu-outline.svg" /></icon-set>
+      </button>
   </div>
-  <!--Content End-->
+  <div class='flex-fill'>
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item active" aria-current="page">Página</li>
+          </ol>
+      </nav>
+      <div class="d-flex align-itens-center">
+          <h2 class='m-0 flex-fill'>Mensagens</h2>
+          <div class='actions'>
+              <button class='btn btn-light'>
+                  <icon-set imageUrl="./public/icons/icon-brand-messenger.svg" /></icon-set>
+              </button>
+              <button class='btn btn-light'>
+                  <icon-set imageUrl="./public/icons/icon-bell.svg" /></icon-set>
+              </button>
+          </div>
+      </div>
+  </div>
+</header>
+<div class="container-fluid">
+  <div class="message-structure h-100">
+    <!--Sidebar Start-->
+    <aside class="message-list" role="tablist" aria-orientation="vertical">
+      <div id="collapseAside" class="nav nav-message border-end flex-column ">
+        <a class="nav-link active" onclick="collapse()" href="#" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+          type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+          <div class="rounded-pills p-i me-3">
+            <img srcset="./public/images/image-placeholder.png" width="40px" class="object-fit-cover border rounded-pill"
+              alt="..." />
+          </div>
+          <div class="flex-fill pe-2 overflow-hidden">
+            <h6 class="name pe-2">
+              Victor Hugo
+            </h6>
+            <small class="text-body-tertiary">1 min</small>
 
+          </div>
+          <div style="white-space:nowrap">
+            <div class="badge bg-primary">02</div>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </a>
+        <a class="nav-link" onclick="collapse()" href="#" id="nav-home-tab2" data-bs-toggle="tab" data-bs-target="#nav-home2" type="button"
+          role="tab" aria-controls="nav-home" aria-selected="true">
+          <div class="rounded-pills p-i me-3">
+            <img srcset="./public/images/image-placeholder.png" width="40px" class="object-fit-cover border rounded-pill"
+              alt="..." />
+          </div>
+          <div class="flex-fill pe-2">
+            <h6 class="name">
+              Carol Carolina
+            </h6>
+            <small class="text-body-tertiary">1 min</small>
+          </div>
+          <div>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </a>
+      </div>
+    </aside>
+    <!--Sidebar End-->
+    <!--Content Start-->
+    <div class="tab-content tab-content-message">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <header class="message-header border-bottom">
+          <div class="d-flex align-items-center px-3 py-3">
+            <button class="btn btn-collapse btn-primary d-block d-md-none me-3 px-2" onclick="toogleCollapse()">
+              <icon-set imageUrl="./public/icons/icon-brand-messenger.svg"></icon-set>
+              <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                <span class="visually-hidden">New alerts</span>
+              </span>
+            </button>
+            <div class="rounded-pills p-i me-3">
+              <img srcset="./public/images/image-placeholder.png" width="40px"
+                class="object-fit-cover border rounded-pill" alt="..." />
+            </div>
+            <div class="flex-fill pe-2">
+              <h6>
+                Victor Hugo<br />
+                <small class="text-body-tertiary">1 min</small>
+              </h6>
+            </div>
+            <button class="btn btn-outline-danger border-0 px-2">
+              <icon-set imageUrl="./public/icons/icon-dots.svg"></icon-set>
+            </button>
+          </div>
+        </header>
+        <div class="message-body">
+          <div class="message left p-2">
+            <div class="card card-message shadow">
+              <div class="card-header text-primary">Victor Hugo</div>
+              <div class="card-body">Minha mensagem</div>
+              <div class="card-footer">
+                <small class="text-body-tertiary">2 dias</small>
+              </div>
+            </div>
+          </div>
+          <div class="message left p-2">
+            <div class="card card-message shadow">
+              <div class="card-header text-primary">Victor Hugo</div>
+              <div class="card-body">Minha mensagem</div>
+              <div class="card-footer">
+                <small class="text-body-tertiary">2 dias</small>
+              </div>
+            </div>
+          </div>
+          <div class="message right p-2">
+            <div class="card card-message right shadow">
+              <div class="card-header text-primary">Guilherme Brenne Bello</div>
+              <div class="card-body">Minha mensagem</div>
+              <div class="card-footer">
+                <small class="text-body-tertiary">1 dias</small>
+              </div>
+            </div>
+          </div>
+          <div class="message-divider text-body-tertiary"><span></span><small>Novas Mensagens</small></div>
+          <div class="message left p-2">
+            <div class="card card-message shadow">
+              <div class="card-header text-primary">Victor Hugo</div>
+              <div class="card-body">Minha mensagem</div>
+              <div class="card-footer">
+                <small class="text-body-tertiary">2 min</small>
+              </div>
+            </div>
+          </div>
+          <div class="message right p-2">
+            <div class="card card-message right shadow">
+              <div class="card-header text-primary">Guilherme Brenne Bello</div>
+              <div class="card-body">Minha mensagem</div>
+              <div class="card-footer">
+                <small class="text-body-tertiary">1 min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="message-footer shadow-lg border-top p-2">
+          <textarea class="form-control rounded-4" placeholder="Escreva sua mensagem aqui..."></textarea>
+          <button class="btn btn-primary mx-2 px-2 rounded-pill">
+            <icon-set imageUrl="../public/icons/icon-send.svg"></icon-set>
+          </button>
+        </footer>
+      </div>
+      <div class="tab-pane fade" id="nav-home2" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <header class="border-bottom">
+          <div class="d-flex align-items-center px-3 py-3">
+            <button class="btn btn-collapse btn-primary d-block d-md-none me-3 px-2" onclick="toogleCollapse()">
+              <icon-set imageUrl="./public/icons/icon-brand-messenger.svg"></icon-set>
+              <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                <span class="visually-hidden">New alerts</span>
+              </span>
+            </button>
+            <div class="rounded-pills p-i me-3">
+              <img srcset="./public/images/image-placeholder.png" width="40px"
+                class="object-fit-cover border rounded-pill" alt="..." />
+            </div>
+            <div class="flex-fill pe-2">
+              <h6>
+                Carol Carolina<br />
+                <small class="text-body-tertiary">1 min</small>
+              </h6>
+            </div>
+            <button class="btn btn-outline-danger border-0 px-2">
+              <icon-set imageUrl="./public/icons/icon-dots.svg"></icon-set>
+            </button>
+          </div>
+        </header>
+        <div class="message-body">
+          <div class="message left p-2">
+            <div class="card card-message shadow ">
+              <div class="card-header text-primary">Carol Carolina</div>
+              <div class="card-body">Minha mensagem</div>
+              <div class="card-footer">
+                <small class="text-body-tertiary">2 min</small>
+              </div>
+            </div>
+          </div>
+          <div class="message right p-2">
+            <div class="card card-message shadow ">
+              <div class="card-header text-primary">Guilherme Bello</div>
+              <div class="card-body">Minha mensagem</div>
+              <div class="card-footer">
+                <small class="text-body-tertiary">1 min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="message-footer shadow-lg border-top p-2">
+          <textarea class="form-control rounded-4" placeholder="Escreva sua mensagem aqui..."></textarea>
+          <button class="btn btn-primary mx-2 px-2 rounded-pill">
+            <icon-set imageUrl="../public/icons/icon-send.svg"></icon-set>
+          </button>
+        </footer>
+      </div>
+    </div>
+    <!--Content End-->
+
+  </div>
 </div>

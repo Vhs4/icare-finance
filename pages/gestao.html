@@ -1,223 +1,253 @@
-<!--Start section of indicators-->
-<div class="row my-3">
-  <!--Chart-->
-  <div class="col-12 col-xl-5 my-2">
-    <div class="card card-media h-100">
-      <div class="card-header d-flex">
-        <h6 class="card-title flex-fill m-0 text-secondary">
-          Média de pedido por pagamento
-        </h6>
-        <button class="btn btn-sm btn-light">
-          <icon-set imageUrl="../public/icons/icon-dots.svg"></icon-set>
-        </button>
-      </div>
-      <div class="card-body d-flex align-items-center justify-content-center">
-        <img src="../public/images/Bar.png" alt="" class="img-fluid" />
-      </div>
-      <div class="card-footer"></div>
-    </div>
+<header class='container-fluid d-flex align-items-center border-bottom py-2 '>
+  <div class='navbar-toggler pe-3'>
+      <button class="btn btn-primary rounded-pill" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <icon-set imageUrl="./public/icons/icon-menu-outline.svg" /></icon-set>
+      </button>
   </div>
-  <!--Cards-->
-  <div class="col-12 col-xl-7">
-    <div class="row h-100">
-      <div class="col-12 my-2 col-md-6 col-xl-3">
-        <div class="card h-100">
-          <div class="card-header d-flex">
-            <h6 class="card-title flex-fill m-0 text-secondary">Crédito</h6>
+  <div class='flex-fill'>
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item active" aria-current="page">Página</li>
+          </ol>
+      </nav>
+      <div class="d-flex align-itens-center">
+          <h2 class='m-0 flex-fill'>Gestão</h2>
+          <div class='actions'>
+              <button class='btn btn-light'>
+                  <icon-set imageUrl="./public/icons/icon-brand-messenger.svg" /></icon-set>
+              </button>
+              <button class='btn btn-light'>
+                  <icon-set imageUrl="./public/icons/icon-bell.svg" /></icon-set>
+              </button>
           </div>
-          <div class="card-body d-flex flex-column justify-content-end">
-            <icon-set class="colored-icon" imageUrl="../public/icons/icon-credit-card.svg"></icon-set>
-            <h5 class="card-text"><small>R$</small> 1258,00</h5>
+      </div>
+  </div>
+</header>
+<div class="container-fluid">
+  <!--Start section of indicators-->
+  <div class="row my-3">
+    <!--Chart-->
+    <div class="col-12 col-xl-5 my-2">
+      <div class="card card-media h-100">
+        <div class="card-header d-flex">
+          <h6 class="card-title flex-fill m-0 text-secondary">
+            Média de pedido por pagamento
+          </h6>
+          <button class="btn btn-sm btn-light">
+            <icon-set imageUrl="../public/icons/icon-dots.svg"></icon-set>
+          </button>
+        </div>
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <img src="../public/images/Bar.png" alt="" class="img-fluid" />
+        </div>
+        <div class="card-footer"></div>
+      </div>
+    </div>
+    <!--Cards-->
+    <div class="col-12 col-xl-7">
+      <div class="row h-100">
+        <div class="col-12 my-2 col-md-6 col-xl-3">
+          <div class="card h-100">
+            <div class="card-header d-flex">
+              <h6 class="card-title flex-fill m-0 text-secondary">Crédito</h6>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-end">
+              <icon-set class="colored-icon" imageUrl="../public/icons/icon-credit-card.svg"></icon-set>
+              <h5 class="card-text"><small>R$</small> 1258,00</h5>
+            </div>
+            <div class="card-footer">
+              <small>
+                <span class="text-success">
+                  <icon-set imageUrl="../public/icons/icon-arrow-elbow-right.svg"></icon-set>
+                  10%
+                </span>
+              </small>
+            </div>
           </div>
-          <div class="card-footer">
-            <small>
-              <span class="text-success">
-                <icon-set imageUrl="../public/icons/icon-arrow-elbow-right.svg"></icon-set>
-                10%
-              </span>
-            </small>
+        </div>
+        <div class="col-12 my-2 col-md-6 col-xl-3">
+          <div class="card h-100">
+            <div class="card-header d-flex">
+              <h6 class="card-title flex-fill m-0 text-secondary">Débito</h6>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-end">
+              <icon-set class="colored-icon" imageUrl="../public/icons/icon-debit-card.svg"></icon-set>
+              <h5 class="card-text"><small>R$</small> 1258,00</h5>
+            </div>
+            <div class="card-footer">
+              <small>
+                <span class="text-success">
+                  <icon-set imageUrl="../public/icons/icon-arrow-elbow-right.svg"></icon-set>
+                  10%
+                </span>
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-2 col-md-6 col-xl-3">
+          <div class="card h-100">
+            <div class="card-header d-flex">
+              <h6 class="card-title flex-fill m-0 text-secondary">Pix</h6>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-end">
+              <icon-set class="colored-icon" imageUrl="../public/icons/icon-pix-logo.svg"></icon-set>
+              <h5 class="card-text"><small>R$</small> 1258,00</h5>
+            </div>
+            <div class="card-footer">
+              <small>
+                <span class="text-success">
+                  <icon-set imageUrl="../public/icons/icon-arrow-elbow-right.svg"></icon-set>
+                  10%
+                </span>
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-2 col-md-6 col-xl-3">
+          <div class="card h-100">
+            <div class="card-header d-flex">
+              <h6 class="card-title flex-fill m-0 text-secondary">
+                Dinheiro
+              </h6>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-end">
+              <icon-set class="colored-icon" imageUrl="../public/icons/icon-brand-cashapp.svg"></icon-set>
+              <h5 class="card-text"><small>R$</small> 1258,00</h5>
+            </div>
+            <div class="card-footer">
+              <small>
+                <span class="text-success">
+                  <icon-set imageUrl="../public/icons/icon-arrow-elbow-right.svg"></icon-set>
+                  10%
+                </span>
+              </small>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-12 my-2 col-md-6 col-xl-3">
-        <div class="card h-100">
-          <div class="card-header d-flex">
-            <h6 class="card-title flex-fill m-0 text-secondary">Débito</h6>
-          </div>
-          <div class="card-body d-flex flex-column justify-content-end">
-            <icon-set class="colored-icon" imageUrl="../public/icons/icon-debit-card.svg"></icon-set>
-            <h5 class="card-text"><small>R$</small> 1258,00</h5>
-          </div>
-          <div class="card-footer">
-            <small>
-              <span class="text-success">
-                <icon-set imageUrl="../public/icons/icon-arrow-elbow-right.svg"></icon-set>
-                10%
-              </span>
-            </small>
-          </div>
+    </div>
+  </div>
+  <div class="row form-filter">
+    <!-- Campo Período (Início) -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="form-floating mb-3">
+        <input type="date" class="form-control" id="data_inicio" name="data_inicio">
+        <label for="data_inicio">Data Início</label>
+      </div>
+    </div>
+
+    <!-- Campo Período (Fim) -->
+    <div class="col-12 col-md-6 col-lg-3">
+
+      <div class="form-floating mb-3">
+        <input type="date" class="form-control" id="data_fim" name="data_fim">
+        <label for="data_fim">Data Fim</label>
+      </div>
+    </div>
+
+    <!-- Campo Tipo de Pagamento -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="form-floating mb-3">
+        <select id="tipos_pagamento" class="form-select">
+          <option value="todos">Todos</option>
+          <option value="pix">Pix</option>
+          <option value="debito">Débito</option>
+          <option value="credito">Crédito</option>
+          <option value="dinheiro">Dinheiro</option>
+        </select>
+        <label for="tipos_pagamento">Tipo de pagamento</label>
+      </div>
+    </div>
+
+    <!-- Campo Valor -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="valor" name="valor" placeholder="Digite o valor" min="0"
+          step="0.01" value="0.00">
+        <label for="valor">Valor (R$)</label>
+      </div>
+    </div>
+  </div>
+  <div class="row my-2">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h6 class=" card-title my-2 text-secondary">Últimos pedidos:</h6>
         </div>
-      </div>
-      <div class="col-12 my-2 col-md-6 col-xl-3">
-        <div class="card h-100">
-          <div class="card-header d-flex">
-            <h6 class="card-title flex-fill m-0 text-secondary">Pix</h6>
-          </div>
-          <div class="card-body d-flex flex-column justify-content-end">
-            <icon-set class="colored-icon" imageUrl="../public/icons/icon-pix-logo.svg"></icon-set>
-            <h5 class="card-text"><small>R$</small> 1258,00</h5>
-          </div>
-          <div class="card-footer">
-            <small>
-              <span class="text-success">
-                <icon-set imageUrl="../public/icons/icon-arrow-elbow-right.svg"></icon-set>
-                10%
-              </span>
-            </small>
-          </div>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Data
+                  <button class="btn btn-sm btn-light">
+                    <img src="../public/icons/table-sorter.svg" alt="ordenar">
+                  </button>
+                </th>
+                <th scope="col">Tipo
+                  <button class="btn btn-sm btn-light">
+                    <img src="../public/icons/table-sorter.svg" alt="ordenar">
+                  </button>
+                </th>
+                <th scope="col">Valor
+                  <button class="btn btn-sm btn-light">
+                    <img src="../public/icons/table-sorter.svg" alt="ordenar">
+                  </button>
+                </th>
+                <th scope="col">Status
+                  <button class="btn btn-sm btn-light">
+                    <img src="../public/icons/table-sorter.svg" alt="ordenar">
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12/02/2024</td>
+                <td>Crédito</td>
+                <td>12,23</td>
+                <td>Concluído</td>
+              </tr>
+              <tr>
+                <td>12/02/2024</td>
+                <td>Crédito</td>
+                <td>12,23</td>
+                <td>Concluído</td>
+              </tr>
+              <tr>
+                <td>12/02/2024</td>
+                <td>Crédito</td>
+                <td>12,23</td>
+                <td>Concluído</td>
+              </tr>
+              <tr>
+                <td>12/02/2024</td>
+                <td>Crédito</td>
+                <td>12,23</td>
+                <td>Concluído</td>
+              </tr>
+              <tr>
+                <td>12/02/2024</td>
+                <td>Crédito</td>
+                <td>12,23</td>
+                <td>Concluído</td>
+              </tr>
+              <tr>
+                <td>12/02/2024</td>
+                <td>Crédito</td>
+                <td>12,23</td>
+                <td>Concluído</td>
+              </tr>
+              <tr>
+                <td>12/02/2024</td>
+                <td>Crédito</td>
+                <td>12,23</td>
+                <td>Concluído</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-      <div class="col-12 my-2 col-md-6 col-xl-3">
-        <div class="card h-100">
-          <div class="card-header d-flex">
-            <h6 class="card-title flex-fill m-0 text-secondary">
-              Dinheiro
-            </h6>
-          </div>
-          <div class="card-body d-flex flex-column justify-content-end">
-            <icon-set class="colored-icon" imageUrl="../public/icons/icon-brand-cashapp.svg"></icon-set>
-            <h5 class="card-text"><small>R$</small> 1258,00</h5>
-          </div>
-          <div class="card-footer">
-            <small>
-              <span class="text-success">
-                <icon-set imageUrl="../public/icons/icon-arrow-elbow-right.svg"></icon-set>
-                10%
-              </span>
-            </small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row form-filter">
-  <!-- Campo Período (Início) -->
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="form-floating mb-3">
-      <input type="date" class="form-control" id="data_inicio" name="data_inicio">
-      <label for="data_inicio">Data Início</label>
-    </div>
-  </div>
-
-  <!-- Campo Período (Fim) -->
-  <div class="col-12 col-md-6 col-lg-3">
-
-    <div class="form-floating mb-3">
-      <input type="date" class="form-control" id="data_fim" name="data_fim">
-      <label for="data_fim">Data Fim</label>
-    </div>
-  </div>
-
-  <!-- Campo Tipo de Pagamento -->
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="form-floating mb-3">
-      <select id="tipos_pagamento" class="form-select">
-        <option value="todos">Todos</option>
-        <option value="pix">Pix</option>
-        <option value="debito">Débito</option>
-        <option value="credito">Crédito</option>
-        <option value="dinheiro">Dinheiro</option>
-      </select>
-      <label for="tipos_pagamento">Tipo de pagamento</label>
-    </div>
-  </div>
-
-  <!-- Campo Valor -->
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="form-floating mb-3">
-      <input type="number" class="form-control" id="valor" name="valor" placeholder="Digite o valor" min="0" step="0.01" value="0.00">
-      <label for="valor">Valor (R$)</label>
-    </div>
-  </div>
-</div>
-<div class="row my-2">
-  <div class="col-12">
-    <div class="card">
-      <div class="card-header">
-        <h6 class=" card-title my-2 text-secondary">Últimos pedidos:</h6>
-      </div>
-      <div class="table-responsive">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">Data
-                <button class="btn btn-sm btn-light">
-                  <img src="../public/icons/table-sorter.svg" alt="ordenar">
-                </button>
-              </th>
-              <th scope="col">Tipo
-                <button class="btn btn-sm btn-light">
-                  <img src="../public/icons/table-sorter.svg" alt="ordenar">
-                </button>
-              </th>
-              <th scope="col">Valor
-                <button class="btn btn-sm btn-light">
-                  <img src="../public/icons/table-sorter.svg" alt="ordenar">
-                </button>
-              </th>
-              <th scope="col">Status
-                <button class="btn btn-sm btn-light">
-                  <img src="../public/icons/table-sorter.svg" alt="ordenar">
-                </button>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12/02/2024</td>
-              <td>Crédito</td>
-              <td>12,23</td>
-              <td>Concluído</td>
-            </tr>
-            <tr>
-              <td>12/02/2024</td>
-              <td>Crédito</td>
-              <td>12,23</td>
-              <td>Concluído</td>
-            </tr>
-            <tr>
-              <td>12/02/2024</td>
-              <td>Crédito</td>
-              <td>12,23</td>
-              <td>Concluído</td>
-            </tr>
-            <tr>
-              <td>12/02/2024</td>
-              <td>Crédito</td>
-              <td>12,23</td>
-              <td>Concluído</td>
-            </tr>
-            <tr>
-              <td>12/02/2024</td>
-              <td>Crédito</td>
-              <td>12,23</td>
-              <td>Concluído</td>
-            </tr>
-            <tr>
-              <td>12/02/2024</td>
-              <td>Crédito</td>
-              <td>12,23</td>
-              <td>Concluído</td>
-            </tr>
-            <tr>
-              <td>12/02/2024</td>
-              <td>Crédito</td>
-              <td>12,23</td>
-              <td>Concluído</td>
-            </tr>
-          </tbody>
-        </table>
       </div>
     </div>
   </div>

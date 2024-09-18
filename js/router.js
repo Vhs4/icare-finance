@@ -10,7 +10,6 @@ const routes = {
     "/": "./pages/home.html",
     "/seguranca": "./pages/security.html",
     "/mensagens": "./pages/messages.html",
-    "/notificacoes": "./pages/notification.html",
     "/analises": "./pages/analises.html",
     "/gestao": "./pages/gestao.html"
 };
