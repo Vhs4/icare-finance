@@ -1,42 +1,17 @@
-body {
-    background-color: #fff;
-    box-sizing:border-box;
-    height: 100%;
-    width: 100%;
-}
-
 .login-container {
-    display: flex;
-    width: 100vw;
     height: 100vh;
-    justify-content: flex-end;
-    align-items: center;
 }
-
+.login-container .container-fluid{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
 .form-signin {
     width: 100%;
-    max-width: 1172px;
-    min-height: 100vh;
-    padding: 15px;
-    background:  #EA0033;
-    padding: 0;
-    padding-top: 246px;
 }
 
-.image-login {
-    height: auto;
-    position: relative;
-    left: 300px;
-    top: 70px;
-}
-
-.text-header {
-    color: #840019;
-}
-
-.button-login {
+.btn.btn-login {
     width: 100%;
-    background-color: #840019;
+    background-color:var(--bs-primary-text-emphasis);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,29 +19,18 @@ body {
 
 #ifood-logo {
     width: 100%;
-    max-width: 160px;
+    max-width: 260px;
     height: auto;
+    margin-bottom: 4rem;
 }
 
 #ifood-login-image{
-    width: 75%;
+    width: 100%;
     height: auto;
     position: relative;
-    
-}
-#ifood-arrow {
-    width: 60%;
-    height: auto;
-    left: 130px;
-    bottom: 90px;
-    position: relative;
+    transform: translateX(20%);
 }
 
-.form-input {
-    width: 100%;
-    max-width: 420px;
-    height: 58px;
-}
 
 .send-text-container {
     width: 100%;
@@ -74,45 +38,9 @@ body {
 }
 
 .login-link{
-    color: white;
+    color: var(--bs-white);
 }
 
 .login-link:hover{
-    color: #840019;
-}
-
-#login-link-senha {
-    margin-top: 24px; 
-    width: 133.95px; 
-    font-size: 15px;
-}
-
-#login-link-criar-conta{
-    padding-top: 48px; 
-    width: 318.35px; 
-    font-size: 15px;
-}
-
-.footer-login {
-    padding-top: 135px;
-    padding-bottom: 40px;
-}
-
-.ifood-loading {
-    margin-top: 25%;
-    margin-bottom: 25%;
-}
-
-#ifood-loading-logo {
-    padding-bottom: 43px;
-}
-
-#login-link-senha, #login-link-criar-conta {
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .image-login #ifood-login-image, #ifood-arrow {
-        display: none; 
-    }
+    color: var(--bs-primary-text-emphasis);
 }
