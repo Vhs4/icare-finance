@@ -1,5 +1,13 @@
+.card-media .img-fluid{
+    max-width: 580px;
+    width: 100%;
+}
 
+.colored-icon{
+    color: var(--bs-primary);
+    fill: var(--bs-primary-bg-subtle);
+}
 
-.col-12.col-lg-6.col-xl-3 {
-    width: 50% !important;
+.form-filter .form-floating>.form-control-plaintext~label, .form-filter  .form-floating>.form-control:focus~label, .form-filter .form-floating>.form-control:not(:placeholder-shown)~label,.form-filter  .form-floating>.form-select~label{
+    color: var(--bs-primary);
 }
