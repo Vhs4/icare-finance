@@ -1,24 +1,164 @@
-.message-structure{
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    margin: 0 calc(var(--bs-gutter-x)*-.5);
-}
+/* 
+X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap 
+*/
 
-.card.card-message{
+.message-structure {
     position: relative;
-    width: 80%;
-}
-.card.card-message.right{
-    margin-left: 20%;
-}
-.card.card-message.right:before{
-    content: ;
-}
-.card.card-message.left{
-    margin-right: 20%;
+    display: grid;
+    grid-template-columns: 0px 1fr;
+    margin: 0 calc(var(--bs-gutter-x)*-.5);
+
 }
 
-.message-footer{
+.nav-message{
+    position: absolute;
+    transform: translateX(-320px);
+    background-color: var(--bs-body-bg);
+    height: 100%;
+    top: 0;
+    z-index: 3;
+    width: 320px;
+    box-shadow:var(--bs-box-shadow-lg);
+    transition: .3s ease-in-out;
+}
+.nav-message.show{
+    transform: translateX(0px);
+}
+.btn-collapse{
+    position: relative;
+    margin-left: -1.25rem;
+    border-radius: 0 var(--bs-border-radius-xxl) var(--bs-border-radius-xxl) 0;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .message-structure{
+        grid-template-columns: 320px 1fr;
+    }
+    .nav-message{
+        position: relative;
+        transform: translateX(0px);
+        box-shadow: none;
+    }
+}
+
+.nav-message {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-secondary-color);
+    --bs-nav-link-hover-color: var(--bs-link-color);
+    --bs-nav-link-disabled-color: var(--bs-tertiary-color);
+    padding: 0;
+    overflow-y: auto;
+}
+
+.nav-message .nav-link {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 0;
+    padding: 1rem;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+}
+
+.nav-message .nav-link.active {
+    background-color: var(--bs-tertiary-bg);
+}
+
+.nav-message .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.nav-message .nav-link .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+}
+
+.tab-content.tab-content-message {
+    background-color: var(--bs-tertiary-bg);
+    overflow: hidden;
+}
+
+.tab-content>.active {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tab-content .message-header {}
+
+.tab-content .message-body {
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.tab-content .message-footer {
     display: flex;
     align-items: center;
+}
+
+.message .card.card-message {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    max-width: 520px;
+    text-align: start;
+}
+
+.message .card.card-message:before {
+    content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2245%22%20height%3D%2233%22%20viewBox%3D%220%200%2045%2033%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M2.65685%2020.6642C-0.481571%2018.7066%20-0.481566%2014.1371%202.65686%2012.1795L19.7874%201.4943C21.4069%200.484127%2023.4603%200.484129%2025.0798%201.4943L42.2104%2012.1795C45.3488%2014.1371%2045.3488%2018.7067%2042.2103%2020.6642L25.0798%2031.3495C23.4603%2032.3596%2021.4069%2032.3596%2019.7874%2031.3494L2.65685%2020.6642Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E");
+    position: absolute;
+    top: 0.5rem;
+    width: 1rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.message.right {
+    text-align: end;
+}
+
+.message.right .card-message:before {
+    right: -1rem;
+    justify-content: end;
+}
+
+.message.left {
+    text-align: start;
+}
+
+.message.left .card-message:before {
+    left: -1rem;
+}
+
+.message-divider {
+    position: relative;
+    padding: 1rem 0;
+    text-align: center;
+}
+.message-divider span{
+    position: absolute;
+    border-top: 2px dashed var(--bs-tertiary-color);
+    height: 1px;
+    top: 1.75rem;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+.message-divider small {
+    position: relative;
+    display: inline-block;
+    padding: .25rem .5rem;
+    background-color: var(--bs-tertiary-bg);
+    z-index: 1;
+    border-radius:.5rem ;
 }

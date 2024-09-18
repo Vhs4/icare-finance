@@ -26,5 +26,5 @@
 
 }
 .main-content > .container-fluid:nth-child(2){
-  height: calc(100vh - 88px);
+  height: calc(100vh - 89px);
 }
