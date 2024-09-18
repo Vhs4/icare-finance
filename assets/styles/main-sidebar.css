@@ -76,7 +76,8 @@
         transition: .3s linear;
     }
     .bi{
-        --icon-bg: var(--bs-secondary-bg)
+        --icon-bg: var(--bs-secondary-bg);
+        margin-right:1rem;
     }
     &:hover, &.active{
         &:before{
@@ -84,7 +85,6 @@
             height: 100%;
             opacity: 1;
         }
-        
     }
     &.active{
     
