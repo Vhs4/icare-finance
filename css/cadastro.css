@@ -1,0 +1,12 @@
+.bg-register{
+    background:url(../public/images/arrow-subtle.svg) no-repeat center bottom var(--bs-secondary-bg) ;
+    background-attachment: fixed;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 420px;
+    min-width: 280px;
+}
