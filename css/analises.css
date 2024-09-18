@@ -1,13 +1,53 @@
+.divPrincipalCards {
+    display: flex;
+    gap: 12px;
+
+    @media (max-width: 1915px) {
+        flex-wrap: wrap;        
+    }
+}
+
 .containerCardsRanking {
     max-width: 100%;
     max-height: 100%;
     display: flex;
     width: 497px;
-    padding: var(--spacer-spacers-3, 16px);
+    padding: var(--spacer-spacers-3, 24px);
     flex-direction: column;
     align-items: flex-start;
-    background-color: #ccc;
+    border-radius: var(--border-border-radius-border-radius-xl, 16px);
+    border: 1px solid var(--border-border-color, #DEE2E6);
+    background: var(--body-body-bg, #FFF);
     gap: var(--spacer-spacers-4, 24px);
+}
+
+.ouroRankingDesktop {
+    display: flex;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+
+    @media (max-width: 500px) {
+        display: none;
+    }
+}
+
+.ouroRankingMobile {
+    display: none;
+
+    @media (max-width: 500px) {
+        display: flex;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
 }
 
 .firstDivCardsRanking {
@@ -25,27 +65,24 @@
     align-items: flex-end;
     gap: var(--spacer-spacers-2, 8px);
     align-self: stretch;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 .divCirculoRanking {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
     gap: -9px;
 }
 
 .retanguloRanking {
     width: 138.26px;
-}
 
-.ouroRanking {
-    display: flex;
-    height: 267px;
-    max-width: 100%;
-    max-height: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
 }
 
 .ouroRanking>.retanguloRanking {
@@ -53,7 +90,7 @@
     height: 118.99px;
 }
 
-.ouroRanking>.posicaoText {
+.posicaoTextOuro {
     color: #664D03;
 }
 
@@ -61,7 +98,7 @@
     display: flex;
     max-width: 100%;
     max-height: 100%;
-    height: 220px;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     gap: 12px;
@@ -72,7 +109,7 @@
     height: 71.99px;
 }
 
-.prataRanking>.posicaoText {
+.posicaoTextPrata {
     color: #495057;
 }
 
@@ -93,13 +130,22 @@
 
 .bronzeRanking {
     display: flex;
-    width: 138px;
+    height: 100%;
     max-width: 100%;
     max-height: 100%;
-    height: 164px;
     flex-direction: column;
     align-items: center;
     gap: 12px;
+}
+
+
+.bronzeRanking>.retanguloRanking {
+    background-color: #FFE5EB;
+    min-height: 15.99px;
+}
+
+.posicaoTextBronze {
+    color: #664D03;
 }
 
 .circuloRanking h3 {
@@ -121,8 +167,65 @@
     font-size: 16px;
     font-style: normal;
     line-height: 150%;
+    white-space: nowrap;       
+    overflow: hidden; 
+    text-overflow: ellipsis;  
+    max-width: 144px;
 }
 
-.posicaoText > span {
+.posicaoText>span {
     font-weight: 500;
+}
+
+.outrasPosicoes {
+    display: flex;
+    padding: 0px var(--spacer-spacers-1, 4px);
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divCelulaOutrasPosicoes {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+}
+
+.divCelulaPosicao {
+    display: flex;
+    margin-right: 13px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--transparent, rgba(255, 255, 255, 0.00));
+}
+
+.divCelulaNome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.divCelulaPedidos {
+    display: flex;
+    width: 81px;
+    flex-direction: column;
+    align-items: center;
+    background: var(--transparent, rgba(255, 255, 255, 0.00));
+}
+
+.textoPedidos {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%
+}
+
+.numeroPedidosRanking {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
 }
