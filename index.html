@@ -29,8 +29,8 @@
                         </li>
                         <li class="nav-item">
                             <a id="management" class="nav-link" href="/gestao" onclick="route()">
-                                <icon-set class='bi'
-                                    imageUrl="./public/icons/icon-brand-cashapp.svg"></icon-set>Gestão e Pagamentos
+                                <icon-set class='bi' imageUrl="./public/icons/icon-brand-cashapp.svg"></icon-set>Gestão
+                                e Pagamentos
                             </a>
                         </li>
                         <li class="nav-item">
@@ -42,8 +42,8 @@
                         </li>
                         <li class="nav-item">
                             <a id="securety" class="nav-link" href="/seguranca" onclick="route()">
-                                <icon-set class='bi'
-                                    imageUrl="./public/icons/icon-shield-cog.svg"></icon-set>Segurança e Acesso
+                                <icon-set class='bi' imageUrl="./public/icons/icon-shield-cog.svg"></icon-set>Segurança
+                                e Acesso
                             </a>
                         </li>
                     </ul>
@@ -57,10 +57,60 @@
                                     imageUrl="./public/icons/icon-brand-messenger.svg"></icon-set>Mensagens
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a id="notification" class="nav-link" href="#" onclick="route()">
+                        <li class="nav-item dropend">
+                            <a id="notification" class="nav-link" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <icon-set class='bi' imageUrl="./public/icons/icon-bell.svg"></icon-set>Notificação
                             </a>
+                            <div class="dropdown-menu notification-dropdown shadow-lg">
+                                <header>
+                                    <h5 class="p-2">Notificação</h5>
+                                </header>
+                                <div class="notification-item new">
+                                    <div class="rounded-pills p-i me-3">
+                                        <img src="./public/images/not-flag.png" width="40px"
+                                            class="object-fit-cover border rounded-pill" alt="..." />
+                                    </div>
+                                    <div class="flex-fill pe-2 overflow-hidden">
+                                        <small class="name d-block text-bold pe-2">
+                                            Atingiu sua meta!
+                                        </small>
+                                        <small class="text-body-tertiary">A partir de hoje você ja superou as médias do mês passado. Parabéns!</small>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="notification-item new">
+                                    <div class="rounded-pills p-i me-3">
+                                        <img src="./public/images/not-user.png" width="40px" class="object-fit-cover border rounded-pill" alt="..." />
+                                    </div>
+                                    <div class="flex-fill pe-2 overflow-hidden">
+                                        <small class="name d-block text-bold pe-2">
+                                            Novidades!
+                                        </small>
+                                        <small class="text-body-tertiary">Agora você pode inserir vários usuários e dar permissão para ele.</small>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="notification-item">
+                                    <div class="rounded-pills p-i me-3">
+                                        <img src="./public/images/not-bell-warning.png"width="40px" class="object-fit-cover border rounded-pill" alt="..." />
+                                    </div>
+                                    <div class="flex-fill pe-2 overflow-hidden">
+                                        <small class="name d-block text-bold pe-2">
+                                            Cuidado!
+                                        </small>
+                                        <small class="text-body-tertiary">Tivemos uma sequência de baixa nos pedidos. Podemos ajudar com algumas dicas.</small>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check text-secondary"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -68,7 +118,7 @@
             <footer>
                 <div class="d-flex align-items-center px-3 py-3">
                     <div class="rounded-pills p-i me-3">
-                        <img srcSet="./public/images/image-placeholder.png" width='40px'
+                        <img src="./public/images/image-placeholder.png" width='40px'
                             class="object-fit-cover border rounded-pill" alt="..." />
                     </div>
                     <div class="flex-fill pe-2">

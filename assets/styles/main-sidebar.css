@@ -24,7 +24,7 @@
 }
 .main-sidebar .body{
     width: 100%;
-    overflow: auto;
+    overflow: visible;
     min-width: 300px;
 }
 
@@ -101,4 +101,44 @@
     .main-sidebar {
         display: flex;
     }
+}
+
+
+.notification-dropdown{
+    min-width: 320px;
+}
+
+.notification-dropdown:before {
+    content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2245%22%20height%3D%2233%22%20viewBox%3D%220%200%2045%2033%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M2.65685%2020.6642C-0.481571%2018.7066%20-0.481566%2014.1371%202.65686%2012.1795L19.7874%201.4943C21.4069%200.484127%2023.4603%200.484129%2025.0798%201.4943L42.2104%2012.1795C45.3488%2014.1371%2045.3488%2018.7067%2042.2103%2020.6642L25.0798%2031.3495C23.4603%2032.3596%2021.4069%2032.3596%2019.7874%2031.3494L2.65685%2020.6642Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E");
+    position: absolute;
+    top: 0.5rem;
+    width: 1rem;
+    left: -1rem;
+    overflow: hidden;
+    display: flex;
+}
+.notification-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 0;
+    padding: 1rem;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+}
+
+.notification-item.new {
+    background-color: var(--bs-tertiary-bg);
+}
+.notification-item .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+}
+.notification-dropdown small{
+    line-height: 1;
 }
